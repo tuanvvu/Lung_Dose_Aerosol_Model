@@ -221,8 +221,6 @@ DEAL<-DE5
 DEtotal<-DEET+DETB+DEAL
 
 ###04.OUTPUT THE RESULTS
-setwd("C:/ICRP/")
-workingDirectory<-"C:/ICRP/"
 write.csv(dae,paste(workingDirectory,"daeP10mansit.csv",sep=""))
 write.csv(DEET,paste(workingDirectory,"DEETPP10mansit.csv",sep=""))
 write.csv(DETB,paste(workingDirectory,"DETBPP10mansit.csv",sep=""))
