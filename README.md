@@ -4,10 +4,12 @@
 This work provides the regional lung deposition calculation program of aeerosols based on the recommended deposition formulae and their parametric values derived from the International Commission on Radiological Protection ( ICRP, Publication 66). The ICRP model is a semi-empirical model which determines the deposited fraction of particles in five regions of the airway system (the nose and mouth, throat and larynx, upper airways, lower airways, and alveoli) using both numerical fitting of experimental data and theoretical calculations. The deposition of particles is controlled by different transport processes, which strongly depend on particle size. In the empirical modelling of the deposition data, the deposited fraction of particles is controlled by two kinds of deposition processes known as aerodynamic and thermodynamic transport: thermodynamic transport predominantly accounts for the deposition of small particles (<0.1 µm), while aerodynamic transport mainly influences large particles (>1.0 µm). For particles in a transition regime size range (0.1-1.0 µm), deposition efficiencies are determined by both aerodynamic and thermodynamic transport processes.
 
 Input properties of particles into ICRP model:
+
 **1. Particle's properties:**
 - Particle size (in nm, model valid from a wide size range of 2 nm- 20 um)
 - Particle hygroscopic's growth factor
 - Particle effective density & shape (dimension) factor
+
 **2. Subject's lung structure parameters/ Human activites:** 
 FR, respiration frequency; VE, minute ventilation; VT, tidal volume of exposed subject; Fn, fraction of total ventilator airflow passing through the nose; FRC, functional residual capacity of the exposed subject; VdET, anatomical dead space of the ET; VdBB, anatomical dead space of the trachea and bronchi; Vdbb, anatomical dead space of the bronchioles; SFt, SFb, SFa, scaling parameters for males; V, volumetric flow rate of inspired air.
 
