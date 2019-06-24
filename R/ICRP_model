@@ -1,4 +1,6 @@
 #####ICRP MODELS FOR HYDROPHOBIC PARTICLES
+# The code is based on function from the ICRP model.
+# It will be wrapped into a package. Any question, please contact Tuan: v.vu@bham.ac.uk
 
 ###01 INPUT Diamter
 # Input data
@@ -220,8 +222,8 @@ DEAL<-DE5
 DEtotal<-DEET+DETB+DEAL
 
 ###04.OUTPUT THE RESULTS
-write.csv(dae,paste(workingDirectory,"daeP10mansit.csv",sep=""))
-write.csv(DEET,paste(workingDirectory,"DEETPP10mansit.csv",sep=""))
-write.csv(DETB,paste(workingDirectory,"DETBPP10mansit.csv",sep=""))
-write.csv(DEAL,paste(workingDirectory,"DEAPLP10mansit.csv",sep=""))
-write.csv(DEtotal,paste(workingDirectory,"DETotalP10mansit.csv",sep=""))
+write.csv(dae,paste(workingDirectory,"daeP10mansit.csv",sep="")) # Aerodynamic diameter from Mobility diameter
+write.csv(DEET,paste(workingDirectory,"DEETPP10mansit.csv",sep="")) # Deposition Fraction at the ET region
+write.csv(DETB,paste(workingDirectory,"DETBPP10mansit.csv",sep="")) # Deposition Fraction at the TB region
+write.csv(DEAL,paste(workingDirectory,"DEAPLP10mansit.csv",sep="")) # Deposition Fraction at the Al region
+write.csv(DEtotal,paste(workingDirectory,"DETotalP10mansit.csv",sep="")) # Total Deposition Fraction in the whole lung
